@@ -1,9 +1,16 @@
 import React from 'react';
-import axios from 'axios';
+import './Jokes.css';
 
 function Jokes({ joke }) {
   return (
-    <div key=</div>
+    <div className='jokeContainer'>
+        <div className='jokesBox'>
+            <div key={joke}>{joke}</div>
+        </div>
+    <div className='jokeButton'>
+        <button onClick="">another one</button>
+        </div>
+    </div>
   )
 }
 

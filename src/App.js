@@ -3,6 +3,7 @@ import PokemonList from './PokemonList';
 import axios from 'axios';
 import Pagination from './Pagination';
 import Counter from './Counter';
+import Jokes from './Jokes';
 
 function App() {
   
@@ -50,7 +51,7 @@ function App() {
     setCurrentPageUrl(prevPageUrl)
     setPage(page-1)
   }
-
+  
   if (loading) return "loading"
 
   return (
@@ -62,6 +63,7 @@ function App() {
       />
       <Counter sum={sum} />
       <div>Page: {page}</div>
+      <Jokes joke={joke}/>
     </>
   );
 } 
